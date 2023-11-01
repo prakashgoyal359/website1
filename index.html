@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h1 id="title">Survey-form</h1>
+            <p id="description" class="description">
+                <em>Thank you for taking the time to help us improve the platform
+            </p></em>
+        </header>
+
+        <form action="#" id="survey-form" class="form-label">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age <small>(optional)</small>(optional)</label>
+                <input type="number" id="number" class="form-control" placeholder="Age" min="15" max="50" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown" id="drop">
+                    Which option best describes your current role?
+                </label>
+                <select name="dropdown" id="dropdown" class="form-control" required>
+                    <option disabled>Select your current role</option>
+                    <option value="student">Student</option>
+                    <option value="full time job">Full Time Job</option>
+                    <option value="full time learner">Full Time Learner</option>
+                    <option value="prefer not to say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="yes" value="Yes" checked />
+                        Yes
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="no" value="No" checked />
+                        No
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="maybe" value="Maybe" checked />
+                        Maybe
+                    </label>
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label for="favorite">
+                    What is your favorite feature?
+                </label>
+                <select name="favorite" id="favorite" class="form-control" required>
+                    <option disabled>Select an option</option>
+                    <option value="challengs">Challengs</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open source">Open Source</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                Languages and Frameworks known<small>(Check all that apply)</small></p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="C">
+                        C
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="C++">
+                        C++
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="C#">
+                        C#
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="Java">
+                        Java
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="Python">
+                        Python
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="JavaScript">
+                        JavaScript
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="React">
+                        React
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="Angular">
+                        Angular
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="Django">
+                        Django
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="Ruby">
+                        Ruby
+                    </label>
+                </p>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comment" cols="50" rows="6" placeholder="Enter your comments..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
